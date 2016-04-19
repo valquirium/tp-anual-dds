@@ -13,6 +13,7 @@ namespace TpDDSAnual
         public string Nombre { get; set; }
         public Coordenada coordenada;
         public Direccion direccion;
+        public double numero;
 
                                 //Metodos PRINCIPALES//
         //CERCANIA ENTRE DOS POI//
