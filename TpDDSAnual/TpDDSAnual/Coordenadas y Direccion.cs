@@ -28,4 +28,9 @@ namespace TpDDSAnual
         }
 
     }
+
+    public struct HorariosDeAtencion
+    {
+        public double[][] mat;
+    }
 }

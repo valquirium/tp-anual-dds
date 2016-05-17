@@ -13,15 +13,16 @@ namespace TpDDSAnual
         public string Nombre { get; set; }
         public Coordenada coordenada;
         public Direccion direccion;
-   
-                                //Metodos PRINCIPALES//
-        //CERCANIA ENTRE DOS POI//
-        public bool DistanciaMenorA(Poi puntoDeInteres, double metros)
-        {
-            if (GetDistance(coordenada, puntoDeInteres.coordenada) < metros)
-            { return true; }
-            else return false;
-        }
+        public int ZonaDeComuna { get; set; }
+
+                        //Metodos PRINCIPALES//
+
+        //Cercania con otra Coordenada//
+        public bool CercanoDe(Coordenada coordenadaDelOtroPunto,int comunaDelOtroPunto)
+        { return (DistanciaMenorA(coordenadaDelOtroPunto, 500)); }
+
+
+     
      
 
     }

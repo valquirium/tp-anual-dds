@@ -6,23 +6,16 @@ using System.Threading.Tasks;
 
 namespace TpDDSAnual
 {
-    class ParadaDeColectivo: Poi
-    {               //ATRIBUTOS//
+    class LocalComercial: Poi 
+    {
+                 //ATRIBUTOS//
         public double CriterioDeCercania { get; set; }
-        
+        double[][] horarioDeAtencion;
+
                     //METODOS PRINCIPALES//
-
-       //Disponibilidad horaria//
-       public bool EstaDisponible()
-        { return true; }
-
         //Cercania con otra Coordenada (Sea coordenada de otro POI o de Consola)//
         public bool CercanoDe(Coordenada coordenadaDelOtroPunto)
-        { return (DistanciaMenorA(coordenadaDelOtroPunto, 100)); }
+        { return (DistanciaMenorA(coordenadaDelOtroPunto, CriterioDeCercania)); }
 
-
-    }
-    
-            
     }
 }
