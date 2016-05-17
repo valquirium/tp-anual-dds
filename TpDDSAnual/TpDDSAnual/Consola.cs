@@ -7,13 +7,16 @@ using System.Threading.Tasks;
 namespace TpDDSAnual
 {
     class Consola
-    {
-        //ATRIBUTOS DE CLASE//
+    {   //ATRIBUTOS//
         public Coordenada coordenada;
         public int Comuna { get; set; }
 
-        //METODOS//
-        public bool consultarCercania(En)
+        //METODOS PRINCIPALES//
+        public bool consultarCercania(Poi puntoDeInteres)
+        {
+            return puntoDeInteres.estaCerca(coordenada);
+              
+        }
 
     }
 }
