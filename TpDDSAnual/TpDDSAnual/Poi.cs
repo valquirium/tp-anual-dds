@@ -13,8 +13,7 @@ namespace TpDDSAnual
         public string Nombre { get; set; }
         public Coordenada coordenada;
         public Direccion direccion;
-        public double numero2;
-
+   
                                 //Metodos PRINCIPALES//
         //CERCANIA ENTRE DOS POI//
         public bool DistanciaMenorA(Poi puntoDeInteres, double metros)
@@ -28,7 +27,6 @@ namespace TpDDSAnual
     }
 }
 
-// No te hagas la santa si sos re turra...
 
 
 

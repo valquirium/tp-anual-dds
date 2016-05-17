@@ -46,7 +46,6 @@
     <Compile Include="Coordenadas y Direccion.cs" />
     <Compile Include="Metodos y Funciones.cs" />
     <Compile Include="Poi.cs" />
-    <Compile Include="Poii.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
